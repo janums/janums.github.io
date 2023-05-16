@@ -1,7 +1,8 @@
 :root {
   --border-radius: 4px;
-  --color-text: #333;
-  --color-primary: #7026b9;
+  --color-text: rgb(73, 71, 71);
+  --color-primary: #171616;
+  /* --color-primary: #7026b9; */
   --color-code-bg: #fff4db;
   --color-code: #8a6534;
   --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
@@ -22,6 +23,7 @@
   --space-5: 32px;
   --space-6: 64px;
   --size-content: 54rem;
+  --size-header: 34rem;
   --size-gutter: var(--space-5);
   --size-gap: var(--space-6);
 }
