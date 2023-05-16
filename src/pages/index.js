@@ -14,11 +14,16 @@ const IndexPage = () => (
         <b>I'm Janum.</b>
       </h1>
       <p className={styles.intro}>
-        I'm building this website from scratch to learn some web development and
-        play with some cool APIs.
-      </p>
-      <p className={styles.intro}>
-        I like music and cinema. Check out my favorite movies{" "}
+        I just graduated from Princeton (May '23) and am a software engineer at{" "}
+        <a
+          href="https://www.pinecone.io/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Pinecone.io
+        </a>
+        . <br /> I play spikeball and dance, and I like cinema and music. <br />
+        Check out my favorite movies{" "}
         <a
           href="https://letterboxd.com/js101/films/by/entry-rating/"
           target="_blank"
@@ -35,6 +40,11 @@ const IndexPage = () => (
           on Spotify
         </a>
         .
+      </p>
+      <p className={styles.intro}>
+        note: I'm building this website from scratch mainly to try out cool APIs
+        and new tech. I'm also hoping to learn some web development along the
+        way.
       </p>
     </div>
   </Layout>

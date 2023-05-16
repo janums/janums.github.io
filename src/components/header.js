@@ -4,10 +4,11 @@ import { Link } from "gatsby";
 const moreLinks = [
   { text: "Home", url: "/" },
   {
-    text: "Page 2",
-    url: "/page-2/",
+    text: "Resume",
+    url: "/resume/",
   },
-  { text: "Blog", url: "/" },
+  { text: "Blog", url: "/blog/" },
+  { text: "Reading", url: "/reading/" },
 ];
 
 const Header = ({ siteTitle }) => (
