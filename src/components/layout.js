@@ -33,13 +33,8 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <footer
-          style={{
-            marginTop: `var(--space-5)`,
-            fontSize: `var(--font-sm)`,
-          }}
-        >
-          © {new Date().getFullYear()} &middot; Built with {"love"} by jps.
+        <footer>
+          © {new Date().getFullYear()} &middot; Built by {"jps"}.
         </footer>
       </div>
     </>

@@ -1,27 +1,13 @@
 import * as React from "react";
 import { Link } from "gatsby";
 
-const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=default-starter`;
-
 const moreLinks = [
   { text: "Home", url: "/" },
   {
     text: "Page 2",
     url: "/page-2/",
   },
-  {
-    text: "Starters",
-    url: "/",
-  },
-  {
-    text: "Showcase",
-    url: "/",
-  },
-  {
-    text: "Contributing",
-    url: "",
-  },
-  { text: "Issues", url: "/" },
+  { text: "Blog", url: "/" },
 ];
 
 const Header = ({ siteTitle }) => (
