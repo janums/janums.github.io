@@ -2,3 +2,5 @@ node_modules
 .cache
 public
 __pycache__
+.DS_Store
+src/.DS_Store
