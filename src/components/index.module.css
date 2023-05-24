@@ -58,3 +58,17 @@
   max-width: none;
   line-height: var(--line-height-loose);
 }
+
+.evenly-distributed-children {
+  display: flex;
+  justify-content: space-between;
+}
+
+.overhead {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0 auto;
+  max-width: var(--size-content);
+  padding: var(--size-gutter);
+}

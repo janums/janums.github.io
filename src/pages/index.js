@@ -42,9 +42,8 @@ const IndexPage = () => (
         .
       </p>
       <p className={styles.intro}>
-        note: I'm building this website from scratch mainly to try out cool APIs
-        and new tech. I'm also hoping to learn some web development along the
-        way.
+        I'm building this website from scratch mainly to try out cool APIs and
+        new tech. I'm also hoping to learn some web development along the way.
       </p>
     </div>
   </Layout>

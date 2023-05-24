@@ -10,6 +10,7 @@ import { useStaticQuery, graphql } from "gatsby";
 
 import Header from "./header";
 import "./layout.css";
+import * as styles from "../components/index.module.css";
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -24,18 +25,12 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: `var(--size-content)`,
-          padding: `var(--size-gutter)`,
-        }}
-      >
+      <div className={styles.overhead}>
+        <div class="evenly-distributed-children">
+          <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+        </div>
         <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()} &middot; Built by {"jps"}.
-        </footer>
+        <footer>© {new Date().getFullYear()}. Built by jps.</footer>
       </div>
     </>
   );
