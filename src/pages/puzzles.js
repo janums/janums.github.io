@@ -4,7 +4,7 @@ import { Link } from "gatsby";
 import Layout from "../components/layout";
 import Seo from "../components/seo";
 
-const ResumePage = () => (
+const PuzzlesPage = () => (
   <Layout>
     <h1>[under construction]</h1>
     <p>coming soon (hopefully)...</p>
@@ -12,6 +12,6 @@ const ResumePage = () => (
   </Layout>
 );
 
-export const Head = () => <Seo title="Resume" />;
+export const Head = () => <Seo title="List of Puzzles" />;
 
-export default ResumePage;
+export default PuzzlesPage;

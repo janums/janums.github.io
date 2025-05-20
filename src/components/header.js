@@ -5,9 +5,13 @@ import "./layout.css";
 const moreLinks = [
   { text: "Home", url: "/" },
   {
+    text: "What makes a good puzzle?",
+    url: "/whatmakesapuzzle/",
+  },
+  {
     text: "Puzzles",
     url: "/puzzles/",
-  }
+  },
 ];
 
 const Header = ({ siteTitle }) => (
