@@ -5,11 +5,9 @@ import "./layout.css";
 const moreLinks = [
   { text: "Home", url: "/" },
   {
-    text: "Resume",
-    url: "/resume/",
-  },
-  { text: "Blog", url: "/blog/" },
-  { text: "Reading", url: "/reading/" },
+    text: "Puzzles",
+    url: "/puzzles/",
+  }
 ];
 
 const Header = ({ siteTitle }) => (

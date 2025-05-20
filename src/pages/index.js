@@ -14,7 +14,7 @@ const IndexPage = () => (
         <b>I'm Janum.</b>
       </h1>
       <p className={styles.intro}>
-        I just graduated from Princeton (May '23) and am a software engineer at{" "}
+        I graduated from Princeton  in May '23 and am a software engineer at{" "}
         <a
           href="https://www.pinecone.io/"
           target="_blank"
@@ -22,7 +22,7 @@ const IndexPage = () => (
         >
           Pinecone.io
         </a>
-        . <br /> I play spikeball and dance, and I like cinema and music. <br />
+        .
         Check out my favorite movies{" "}
         <a
           href="https://letterboxd.com/js101/films/by/entry-rating/"
@@ -42,8 +42,9 @@ const IndexPage = () => (
         .
       </p>
       <p className={styles.intro}>
-        I'm building this website from scratch mainly to try out cool APIs and
-        new tech. I'm also hoping to learn some web development along the way.
+        I'm building this website from scratch mainly to compile my favorite
+        puzzles in one place. I'm also hoping to learn some web development
+        along the way.
       </p>
     </div>
   </Layout>
