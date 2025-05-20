@@ -10,15 +10,15 @@ const moreLinks = [
   },
   {
     text: "Puzzles",
-    url: "/puzzles/",
+    url: "/puzzleslist/",
   },
 ];
 
 const Header = ({ siteTitle }) => (
-  <header>
+  <header className="header-nav">
     {moreLinks.map((link, i) => (
       <React.Fragment key={link.url}>
-        <Link to={link.url}>{link.text}</Link>
+        <Link className="header-link" to={link.url}>{link.text}</Link>
         {i !== moreLinks.length - 1 && <> · </>}
       </React.Fragment>
     ))}

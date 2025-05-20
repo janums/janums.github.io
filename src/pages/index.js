@@ -22,29 +22,29 @@ const IndexPage = () => (
         >
           Pinecone.io
         </a>
-        .
-        Check out my favorite movies{" "}
+        . <br /> Check out my favorite{" "}
         <a
           href="https://letterboxd.com/js101/films/by/entry-rating/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          on Letterboxd
+          movies
         </a>{" "}
-        and my favorite music{" "}
+        and my favorite {" "}
         <a
           href="https://open.spotify.com/user/elephant56482-us/playlists"
           target="_blank"
           rel="noopener noreferrer"
         >
-          on Spotify
+          music
         </a>
         .
       </p>
       <p className={styles.intro}>
-        I'm building this website from scratch mainly to compile my favorite
-        puzzles in one place. I'm also hoping to learn some web development
-        along the way.
+        I'm compiling my favorite puzzles on this website.
+        <br />
+        See my thoughts on{" "}<Link to="/whatmakesapuzzle/">what makes a <i>good</i> puzzle</Link>,
+        and <Link to="/puzzleslist/">browse my favorite puzzles</Link>.
       </p>
     </div>
   </Layout>
