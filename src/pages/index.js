@@ -41,7 +41,8 @@ const IndexPage = () => (
         .
       </p>
       <p className={styles.intro}>
-        I'm compiling my favorite puzzles on this website.
+        I'm compiling my favorite puzzles on this website. These come from various places; some of them from books or websites, 
+        some from friends, and some from my own brain. When possible, I've tried to give credit to the original source.
         <br />
         See my thoughts on{" "}<Link to="/whatmakesapuzzle/">what makes a <i>good</i> puzzle</Link>,
         and <Link to="/puzzleslist/">browse my favorite puzzles</Link>.
