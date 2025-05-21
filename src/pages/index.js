@@ -11,10 +11,10 @@ const IndexPage = () => (
     <div className={styles.textLeft}>
       <h1>
         Hi. <br />
-        <b>I'm Janum.</b>
+        <b>I'm jps.</b>
       </h1>
       <p className={styles.intro}>
-        I graduated from Princeton  in May '23 and am a software engineer at{" "}
+        I graduated from Princeton  in May 2023 and am a software engineer at{" "}
         <a
           href="https://www.pinecone.io/"
           target="_blank"
@@ -32,7 +32,7 @@ const IndexPage = () => (
         </a>{" "}
         and my favorite {" "}
         <a
-          href="https://open.spotify.com/user/elephant56482-us/playlists"
+          href="https://open.spotify.com/playlist/5NthvRKYYMlQEkqVyfkgAr?trackId=33pXpH7VVUVGET3ui4CI4T"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -41,8 +41,9 @@ const IndexPage = () => (
         .
       </p>
       <p className={styles.intro}>
-        I'm compiling my favorite puzzles on this website. These come from various places; some of them from books or websites, 
+        I'm compiling my favorite puzzles on this website. These come from various places; some of them from books or websites,
         some from friends, and some from my own brain. When possible, I've tried to give credit to the original source.
+        <br />
         <br />
         See my thoughts on{" "}<Link to="/whatmakesapuzzle/">what makes a <i>good</i> puzzle</Link>,
         and <Link to="/puzzleslist/">browse my favorite puzzles</Link>.

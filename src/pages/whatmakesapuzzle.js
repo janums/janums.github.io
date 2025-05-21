@@ -6,9 +6,70 @@ import Seo from "../components/seo";
 
 const WhatMakesAPuzzlePage = () => (
   <Layout>
-    <h1>What makes a good puzzle?</h1>
-    <h2>What are the criteria for a good puzzle?</h2>
-    <Link to="/">Go back to the homepage</Link>
+    <h1>What makes a puzzle "good"?</h1>
+    <p>
+      The criteria for a good puzzle are very subjective. It's hard to exactly pinpoint what makes a puzzle fun to solve and interesting to think about, but I've
+      certainly noticed similarities in the puzzles I like most. These are the things I look for in a puzzle:
+      <br />
+      <br />
+      <ol>
+        <li>
+          <b>Easy to understand.</b> A good puzzle is easy to understand in a few seconds. It shouldn't require
+          a lot of background knowledge or technical skill to grasp the setup.
+        </li>
+        <li>
+          <b>Easy to reason about <i>in your head</i>.</b> The "in your head" bit is important to me. I do also like puzzles that require complicated
+          diagrams or calculations (think puzzles that present you with a 12x12 grid and ask you to do something complex with it), but, for me, the <i>best</i> puzzles
+          are those that you can ask your friends on a hike or think about in the shower. For some of the puzzles on this site, it might be helpful to
+          have a pen and paper handy, but none will require complicated calculations.
+        </li>
+        <li>
+          <b>Has a simple solution.</b> This criterion is more nuanced. Good puzzles, in my opinion, not only have a simple setup,
+          but also have a simple solution. This means that getting to the solution shouldn't require advanced derivatives or a complex fourier transform;
+          rather, almost anyone should be able to fully grok the solution by reasoning through it.
+        </li>
+        <li>
+          <b>Is elegant.</b> This is hard to pin down, but puzzles can be elegant much like computer scientists find
+          algorithms or programs elegant. Jon Bentley and Doug McIlroy said: "The key to performance is elegance, not battalions of special cases".
+          In this sense, a good puzzle is one that gets simpler and cleaner as you approach the solution. Brute force will not unlock the solution;
+          rather, the solution will require a clever insight that, once realized, drastically simplifies the problem instead of complicating it.
+        </li>
+      </ol>
+    </p>
+    <h2>Disclaimers</h2>
+    <p>
+      <ol>
+        <li>
+          I'm not a professional puzzle designer, so I don't know if these criteria are actually used by professional puzzle designers.
+          I also don't know if these criteria are actually the best way to judge a puzzle.
+        </li>
+        <li>
+          I mentioned in my first criterion that a good puzzle doesn't require background knowledge or technical skill to understand. I also
+          think it shouldn't require these things to solve. That said, there are several concepts in discrete math, probability, and computer science
+          that would likely be helpful in solving some of these puzzles. I've compiled a list of these concepts below.
+        </li>
+      </ol>
+    </p>
+    <h2>Background concepts</h2>
+    <p>
+      <ul>
+        <li>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://en.wikipedia.org/wiki/Mathematical_induction"
+          >Induction</a>
+        </li>
+        <li>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://en.wikipedia.org/wiki/Pigeonhole_principle"
+          >Pigeonhole principle</a>
+        </li>
+      </ul>
+    </p>
+    <Link to="/puzzleslist/">View puzzles list</Link>
   </Layout>
 );
 
