@@ -6,7 +6,7 @@ import TextButton from "../../components/TextButton";
 import TextSection from "../../components/TextSection";
 import ExternalLink from "../../components/ExternalLink";
 
-const ThreePeopleFiveHatsPage = () => {
+const WolvesSheepPage = () => {
   const [showHint1, setShowHint1] = React.useState(false);
   const [showHint2, setShowHint2] = React.useState(false);
   const [showSection, setShowSection] = React.useState(false);
@@ -82,6 +82,6 @@ const ThreePeopleFiveHatsPage = () => {
   );
 };
 
-export const Head = () => <Seo title="Birthday Cake" />;
+export const Head = () => <Seo title="Island of Wolves" />;
 
-export default ThreePeopleFiveHatsPage;
+export default WolvesSheepPage;

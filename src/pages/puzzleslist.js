@@ -10,6 +10,9 @@ const PuzzlesPage = () => (
     <h3>[always under construction]</h3>
     <ul>
       <li>
+        <Link to="/puzzles/twocoins/">Two Prisoners, Two Coins</Link> [May 21, 2025]
+      </li>
+      <li>
         <Link to="/puzzles/chalice/">The King's Chalice</Link> [May 20, 2025]
       </li>
       <li>

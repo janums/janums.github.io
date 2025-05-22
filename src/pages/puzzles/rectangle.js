@@ -7,7 +7,7 @@ import Seo from "../../components/seo";
 import TextButton from "../../components/TextButton";
 import TextSection from "../../components/TextSection";
 
-const ThreePeopleFiveHatsPage = () => {
+const RectangleCakePage = () => {
   const [showHint1, setShowHint1] = React.useState(false);
   const [showHint2, setShowHint2] = React.useState(false);
   const [showSection, setShowSection] = React.useState(false);
@@ -70,4 +70,4 @@ const ThreePeopleFiveHatsPage = () => {
 
 export const Head = () => <Seo title="Birthday Cake" />;
 
-export default ThreePeopleFiveHatsPage;
+export default RectangleCakePage;

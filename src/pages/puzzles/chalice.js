@@ -6,7 +6,7 @@ import TextButton from "../../components/TextButton";
 import TextSection from "../../components/TextSection";
 import ExternalLink from "../../components/ExternalLink";
 
-const ThreePeopleFiveHatsPage = () => {
+const KingsChalicePage = () => {
   const [showHint1, setShowHint1] = React.useState(false);
   const [showSection, setShowSection] = React.useState(false);
   return (
@@ -88,6 +88,6 @@ const ThreePeopleFiveHatsPage = () => {
   );
 };
 
-export const Head = () => <Seo title="Chalice" />;
+export const Head = () => <Seo title="King's Chalice" />;
 
-export default ThreePeopleFiveHatsPage;
+export default KingsChalicePage;

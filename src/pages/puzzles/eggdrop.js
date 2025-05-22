@@ -6,7 +6,7 @@ import Seo from "../../components/seo";
 import TextButton from "../../components/TextButton";
 import TextSection from "../../components/TextSection";
 import ExternalLink from "../../components/ExternalLink";
-const ThreePeopleFiveHatsPage = () => {
+const EggDropPage = () => {
   const [showHint1, setShowHint1] = React.useState(false);
   const [showSection, setShowSection] = React.useState(false);
   return (
@@ -86,4 +86,4 @@ const ThreePeopleFiveHatsPage = () => {
 
 export const Head = () => <Seo title="2 glass balls" />;
 
-export default ThreePeopleFiveHatsPage;
+export default EggDropPage;
