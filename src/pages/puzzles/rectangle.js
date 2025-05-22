@@ -6,7 +6,7 @@ import Layout from "../../components/layout";
 import Seo from "../../components/seo";
 import TextButton from "../../components/TextButton";
 import TextSection from "../../components/TextSection";
-import ExternalLink from "../../components/ExternalLink";
+
 const ThreePeopleFiveHatsPage = () => {
   const [showHint1, setShowHint1] = React.useState(false);
   const [showHint2, setShowHint2] = React.useState(false);

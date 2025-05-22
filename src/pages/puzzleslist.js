@@ -10,6 +10,12 @@ const PuzzlesPage = () => (
     <h3>[always under construction]</h3>
     <ul>
       <li>
+        <Link to="/puzzles/wolves/">One Sheep on an Island of Wolves</Link> [June 3, 2023]
+      </li>
+      <li>
+        <Link to="/puzzles/thousandcoins/">A Thousand Coins</Link> [May 29, 2023]
+      </li>
+      <li>
         <Link to="/puzzles/rectangle/">Birthday Cake</Link> [May 26, 2023]
       </li>
       <li>

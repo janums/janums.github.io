@@ -51,12 +51,12 @@ const WhatMakesAPuzzlePage = () => (
         </li>
         <li>
           I've included some hints for all the puzzles. Sometimes the hints are small, and sometimes they're very revealing. In general, when there are
-          multiple hints, the first ones are more subtle and the later ones are more revealing. If there is only one hint, it's probably quite revealing,
+          multiple hints, the first ones are more subtle and the later ones are more revealing. If there is only one hint, it's probably quite telling,
           so make sure you definitely need it before looking at it.
         </li>
         <li>
           I mentioned in my first criterion that a good puzzle doesn't require background knowledge or technical skill to understand. I also
-          think it shouldn't require these things to solve. That said, there are several concepts in discrete math, probability, and computer science
+          think it shouldn't require these things to solve. That said, there are several introductory concepts in discrete math, probability, and computer science
           that could be helpful in solving some of these puzzles. I've compiled a list of these concepts below.
         </li>
       </ol>
@@ -84,6 +84,13 @@ const WhatMakesAPuzzlePage = () => (
             rel="noopener noreferrer"
             href="https://en.wikipedia.org/wiki/Proof_by_exhaustion"
           >Case analysis</a>
+        </li>
+        <li>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://en.wikipedia.org/wiki/Nash_equilibrium"
+          >Nash equilibrium</a>
         </li>
       </ul>
     </p>
