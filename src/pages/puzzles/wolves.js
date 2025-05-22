@@ -63,8 +63,8 @@ const ThreePeopleFiveHatsPage = () => {
           They have reached a stalemate (technically a Nash equilibrium), and both choose to live forever without eating the sheep.
           <br />
           <br />
-          When there are 3 wolves and 1 sheep, the wolves will rush to be the first to eat the sheep, since they know that the other two wolves will have reached
-          an impasse in the 2 wolf case. As a result, another equilibrium exists at the 4 wolf case, meaning that the wolves will again rush to eat the sheep at
+          When there are 3 wolves and 1 sheep, the wolves will rush to be the first to eat the sheep, since they know that the other two wolves will reach
+          an impasse in the 2 wolf case. As a result, another equilibrium exists at the 4 wolf case, meaning that the wolves will again rush to eat the sheep in
           the 5 wolf case.
           <br />
           <br />

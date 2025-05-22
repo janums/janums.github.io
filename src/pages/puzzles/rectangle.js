@@ -21,8 +21,8 @@ const ThreePeopleFiveHatsPage = () => {
         <br />
         <br />
         Note: your adversary may have cut out the piece in an arbitrary way, including a random orientation and/or along the edge, but the cut
-        will be still be a rectangle. In the image below, the colored rectangles are different examples of what the inner, missing piece cutouts.
-        Your strategy for cutting a single straight line should work for all of these.
+        will be still be a rectangle. In the image below, the colored rectangles are different examples of what the inner, missing piece cutouts
+        could look like. Your strategy for cutting a single straight line should work for all of these cases.
       </p>
       <div style={{ textAlign: 'left' }}>
         <img src={rectangleImg} alt="Rectangular birthday cake" style={{ maxWidth: '75%' }} />
@@ -51,7 +51,7 @@ const ThreePeopleFiveHatsPage = () => {
       </TextButton>
       {showSection && (
         <TextSection>
-          If you're a really out-of-the-box thinker, you might have landed on cutting the cake <i>horizontally</i>.
+          If you're a really out-of-the-box thinker, you might have landed on cutting the cake <i>horizontally</i> (along the width of the cake).
           That does technically work for a 3-d rectangular prism, but what if the inner cutout doesn't go all the way through the cake? Our strategy should handle this too.
           <br />
           <br />
