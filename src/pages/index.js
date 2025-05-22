@@ -5,6 +5,7 @@ import { StaticImage } from "gatsby-plugin-image";
 import Layout from "../components/layout";
 import Seo from "../components/seo";
 import * as styles from "../components/index.module.css";
+import ExternalLink from "../components/ExternalLink";
 
 const IndexPage = () => (
   <Layout>
@@ -15,29 +16,17 @@ const IndexPage = () => (
       </h1>
       <p className={styles.intro}>
         I graduated from Princeton  in May 2023 and am a software engineer at{" "}
-        <a
-          href="https://www.pinecone.io/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <ExternalLink href="https://www.pinecone.io/">
           Pinecone.io
-        </a>
+        </ExternalLink>
         . <br /> Check out my favorite{" "}
-        <a
-          href="https://letterboxd.com/js101/films/by/entry-rating/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <ExternalLink href="https://letterboxd.com/js101/films/by/entry-rating/">
           movies
-        </a>{" "}
+        </ExternalLink>{" "}
         and my favorite {" "}
-        <a
-          href="https://open.spotify.com/playlist/5NthvRKYYMlQEkqVyfkgAr?trackId=33pXpH7VVUVGET3ui4CI4T"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <ExternalLink href="https://open.spotify.com/playlist/5NthvRKYYMlQEkqVyfkgAr?trackId=33pXpH7VVUVGET3ui4CI4T">
           music
-        </a>
+        </ExternalLink>
         .
       </p>
       <p className={styles.intro}>

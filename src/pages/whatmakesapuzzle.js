@@ -18,7 +18,7 @@ const WhatMakesAPuzzlePage = () => (
           a lot of background knowledge or technical skill to grasp the setup.
         </li>
         <li>
-          <b>Is easy to reason about <i>in your head</i>.</b> The "in your head" bit is important to me. I do also like puzzles that require complicated
+          <b>Is easy to reason about <i>in your head</i>.</b> The "in your head" bit is important to me. I do also enjoy puzzles that require complicated
           diagrams or calculations (think puzzles that present you with a 12x12 grid and ask you to do something complex with it), but, for me, the most <i>fun</i> puzzles
           are those that you can ask your friends on a hike or think about in the shower. For some of the puzzles on this site, it might be helpful to
           have a pen and paper handy, but that's not required for any of them.
@@ -48,6 +48,11 @@ const WhatMakesAPuzzlePage = () => (
         <li>
           I'm not a professional puzzle designer, so I don't know if these criteria are actually used by professional puzzle designers.
           I also don't know if these criteria are the best way to judge a puzzle.
+        </li>
+        <li>
+          I've included some hints for all the puzzles. Sometimes the hints are small, and sometimes they're very revealing. In general, when there are
+          multiple hints, the first ones are more subtle and the later ones are more revealing. If there is only one hint, it's probably quite revealing,
+          so make sure you definitely need it before looking at it.
         </li>
         <li>
           I mentioned in my first criterion that a good puzzle doesn't require background knowledge or technical skill to understand. I also

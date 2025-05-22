@@ -61,8 +61,6 @@ const ThreePeopleFiveHatsPage = () => {
           <br />
           <br />
           Notice that <i>C</i> can follow this reasoning to conclude that his own hat must be red without need to see anything.
-          <br />
-          <br />
         </TextSection>
       )}
       <br />
