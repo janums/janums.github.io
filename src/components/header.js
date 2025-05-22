@@ -5,7 +5,7 @@ import "./layout.css";
 const moreLinks = [
   { text: "Home", url: "/" },
   {
-    text: "What makes a good puzzle?",
+    text: "What makes a puzzle?",
     url: "/whatmakesapuzzle/",
   },
   {

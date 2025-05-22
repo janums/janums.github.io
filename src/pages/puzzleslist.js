@@ -6,17 +6,19 @@ import Seo from "../components/seo";
 
 const PuzzlesPage = () => (
   <Layout>
-    <h1>[under construction]</h1>
-    <p>coming soon (hopefully)...</p>
+    <h1>Puzzles</h1>
+    <h3>[always under construction]</h3>
     <ul>
       <li>
-        <Link to="/puzzles/threehats/">3 People 5 Hats puzzle</Link>
+        <Link to="/puzzles/threehats/">3 People, 5 Hats</Link> [May 15, 2021]
+      </li>
+      <li>
+        <Link to="/puzzles/threehats/">3 People, 5 Hats</Link> [May 15, 2021]
       </li>
     </ul>
-    <Link to="/">Go back to the homepage</Link>
   </Layout>
 );
 
-export const Head = () => <Seo title="List of Puzzles" />;
+export const Head = () => <Seo title="Puzzles" />;
 
 export default PuzzlesPage;

@@ -14,18 +14,18 @@ const WhatMakesAPuzzlePage = () => (
       <br />
       <ol>
         <li>
-          <b>Easy to understand.</b> A good puzzle is easy to understand in a few seconds. It shouldn't require
+          <b>Is easy to understand.</b> A good puzzle is easy to understand in a few seconds. It shouldn't require
           a lot of background knowledge or technical skill to grasp the setup.
         </li>
         <li>
-          <b>Easy to reason about <i>in your head</i>.</b> The "in your head" bit is important to me. I do also like puzzles that require complicated
+          <b>Is easy to reason about <i>in your head</i>.</b> The "in your head" bit is important to me. I do also like puzzles that require complicated
           diagrams or calculations (think puzzles that present you with a 12x12 grid and ask you to do something complex with it), but, for me, the most <i>fun</i> puzzles
           are those that you can ask your friends on a hike or think about in the shower. For some of the puzzles on this site, it might be helpful to
           have a pen and paper handy, but that's not required for any of them.
         </li>
         <li>
           <b>Doesn't break the rules.</b> While good puzzles do require out-of-the-box thinking, they don't bend the rules of the problem. Solutions are not
-          tricky "gotchas" that find a loophole in the constraints of the problem.
+          tricky "gotchas" that find a loophole in the constraints or wording of the problem. Assume no loopholes or tricks for any of the puzzles.
         </li>
         <li>
           <b>Has a simple solution.</b> This criterion is more nuanced. Good puzzles, in my opinion, not only have a simple setup,
@@ -33,9 +33,8 @@ const WhatMakesAPuzzlePage = () => (
           rather, almost anyone should be able to fully grok the solution by reasoning through it.
         </li>
         <li>
-          <b>Is elegant.</b> This is hard to pin down, but puzzles can be elegant much like computer scientists find
-          algorithms or programs elegant.
-          In this sense, a good puzzle is one that gets simpler and cleaner as you approach the solution. Brute force will not unlock the solution;
+          <b>Is elegant.</b> This is hard to pin down, but puzzles can be elegant much like algorithms or programs can be elegant.
+          In this sense, a good puzzle is one that gets simpler and cleaner as you approach the solution. Brute forcing will not usually unlock the solution;
           rather, the solution will require a clever insight that, once realized, drastically simplifies the problem instead of complicating it.
           <br />
           <br />
@@ -74,12 +73,19 @@ const WhatMakesAPuzzlePage = () => (
             href="https://en.wikipedia.org/wiki/Pigeonhole_principle"
           >Pigeonhole principle</a>
         </li>
+        <li>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://en.wikipedia.org/wiki/Proof_by_exhaustion"
+          >Case analysis</a>
+        </li>
       </ul>
     </p>
-    <Link to="/puzzleslist/">View puzzles list</Link>
+    <Link to="/puzzleslist/">View puzzles</Link>
   </Layout>
 );
 
-export const Head = () => <Seo title="What makes a good puzzle?" />;
+export const Head = () => <Seo title="What makes a puzzle?" />;
 
 export default WhatMakesAPuzzlePage;
