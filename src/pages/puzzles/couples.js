@@ -41,7 +41,7 @@ const CouplesPage = () => {
       </TextButton>
       {showHint2 && (
         <TextSection>
-          Consider the person that only knows 1 person (their partner). How many people does their partner <i>have to</i> know?
+          Consider the person that only knows 1 person, their partner. How many people does their partner <i>have to</i> know?
         </TextSection>
       )}
       <br />
@@ -67,7 +67,7 @@ const CouplesPage = () => {
           We can continue following this logic to conclude that (p3, p7) and (p4, p6) are partners.
           <br />
           <br />
-          Now we've landed on p5. p9 cannot know p1, p2, p3, or p4, and must know p9, p8, p7, and p6.
+          Now we've landed on p5. p5 cannot know p1, p2, p3, or p4, and must know p9, p8, p7, and p6.
           The other couples are already paired off, so p5's couple must <i>also</i> know 5 people.
           <br />
           <br />
