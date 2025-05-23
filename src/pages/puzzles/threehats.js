@@ -60,7 +60,7 @@ const ThreePeopleFiveHatsPage = () => {
           that <i>at most</i> one of them can be wearing a blue hat. So when <i>B</i> says he also doesn't know, this reveals that <i>C</i> must be wearing a red hat.
           <br />
           <br />
-          Notice that <i>C</i> can follow this reasoning to conclude that his own hat must be red without need to see anything.
+          Notice that <i>C</i> can follow this reasoning to conclude that his own hat is red without needing to see anything.
         </TextSection>
       )}
       <br />

@@ -17,7 +17,7 @@ const TwoCoinsPage = () => {
         <br />
         <br />
         In each round, a guard will come to each prisoner's cell.
-        Each guard will have the prisoner flip his coin, tell him the result, and then ask him what the other prisoner flipped.
+        The guard will have the prisoner flip his coin, tell him the result, and then ask him what the other prisoner flipped.
         <br />
         <br />
         <ul>
@@ -28,7 +28,7 @@ const TwoCoinsPage = () => {
             If neither of them guess correctly, they will both be executed immediately.
           </li>
           <li>
-            If at least one of the two prisoners correctly guesses what the other flipped, they have passed that round.
+            If one of the two prisoners correctly guesses what the other flipped, they have passed that round.
           </li>
           <li>
             If they are able to pass 1000 rounds in a row, they will be released.
@@ -54,7 +54,9 @@ const TwoCoinsPage = () => {
       </TextButton>
       {showSection && (
         <TextSection>
-          Here's the simple yet effective strategy:<br />
+          Here's the simple yet effective strategy to guarantee their release after the 1000th round:
+          <br />
+          <br />
           <i>A</i> should always guess whatever he himself flipped, and <i>B</i> should always guess the opposite of his own flip.
           <br />
           <br />
@@ -68,6 +70,11 @@ const TwoCoinsPage = () => {
           Case 2: <i>A</i> and <i>B</i> flipped their coins differently (one heads, one tails).
           Since <i>B</i> is always guessing the opposite of what he himself flipped, and the two prisoners flipped their coins
           differently, <i>B</i> will guess <i>A</i>'s coin correctly.
+          <br />
+          <br />
+          There's no way for them to be released before the 1000th round. This strategy guarantees that <i>exactly</i> one of the two prisoners
+          will guess correctly, meaning there's no chance of them being released because they were both correct.
+          If they wanted to take a chance at being released earlier, they would take on an equal risk of being executed.
         </TextSection >
       )}
       <br />

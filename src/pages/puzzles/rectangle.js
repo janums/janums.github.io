@@ -14,14 +14,14 @@ const RectangleCakePage = () => {
   return (
     <Layout>
       <h1>Birthday Cake</h1>
-      <p>You baked an awesome, perfectly rectangular birthday cake for your friend's birthday party.
-        But before you guys serve it, someone cuts a smaller, rectangular piece out of the cake.
-        With a single straight cut, can you always divide the remaining cake into two equal halves, meaning both halves have the same area?
+      <p>You baked an awesome, perfectly rectangular cake for your friend's birthday party.
+        But before you serve it, someone cuts a smaller, rectangular piece out of the cake.
+        With a single, straight cut, can you always divide the remaining cake into two equal halves (equal areas)?
         Devise a strategy to draw the line and cut along it.
         <br />
         <br />
-        Note: your adversary may have cut out the piece in an arbitrary way, including a random orientation and/or along the edge, but the cut
-        will be still be a rectangle. In the image below, the colored rectangles are different examples of what the inner, missing piece cutouts
+        Note: your adversary may have cut out the piece in any way - could be a random orientation and/or along the edge, but the cut
+        will be still be a rectangle. In the image below, the colored rectangles are some different examples of what the inner cutout
         could look like. Your strategy for cutting a single straight line should work for all of these cases.
       </p>
       <div style={{ textAlign: 'left' }}>
@@ -56,7 +56,7 @@ const RectangleCakePage = () => {
           <br />
           <br />
           Any line that cuts a regular rectangle in half will always pass through the center point of the rectangle.
-          We want to cut both the outer and inner rectangles in exactly half; to do this, there exists a single line that passes through the center of both rectangles.
+          We want to cut both the outer and inner rectangles in exactly half. There exists a single line that passes through the center of both rectangles.
           <br />
           <br />
           We can use this line to cut the remaining cake in equal halves.

@@ -39,7 +39,7 @@ const ThousandCoinsPage = () => {
       {showHint2 && (
         <TextSection>
           A good strategy for this type of problem is to consider a smaller number of coins.
-          Try to solve the case for 3 coins with 1 heads up, then 4 with 1, then 5 with 1, etc.
+          Try to solve the case for 4 coins with 2 heads up, then 5 with 1 heads up.
         </TextSection>
       )}
       <br />
@@ -48,10 +48,10 @@ const ThousandCoinsPage = () => {
       </TextButton>
       {showSection && (
         <TextSection>
-          Here's the solution: pick 20 coins at random and flip them all over. This is the second group.
+          Here's the simple solution: pick 20 coins at random and flip them all over. This is the second group.
           <br />
           <br />
-          Why does this work? Let's do some casework.
+          Why does this work? Let's do the casework.
           <br />
           <br />
           Case 1: the 20 coins selected are all 20 heads up coins. Great! Once you flip them, they all become tails.

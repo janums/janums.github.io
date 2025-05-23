@@ -56,18 +56,24 @@ const KingsChalicePage = () => {
           <ul>
             <li>Keep a running count, <i>c</i>, of the number of times the chalice has been seen upside down.</li>
             <li>When called into the room for the first time, increment <i>c</i> by 1.</li>
-            <li>Each time you're called into the room, if the chalice is upside down, increment <i>c</i> by 1 and flip it right-side up.</li>
-            <li>Each time you're called into the room, if the chalice is right-side up, do nothing.</li>
+            <li>Each time you're called into the room,</li>
+            <ul>
+              <li>If the chalice is upside down, increment <i>c</i> by 1 and flip it right-side up.</li>
+              <li>If the chalice is right-side up, do nothing.</li>
+            </ul>
             <li>Once <i>c</i> reaches 100, announce that they have all been called into the room.</li>
           </ul>
 
-          Every other prisoner can follow this policy:
+          Every other prisoner can follow this policy: When the prisoner is called into the room,
           <br />
           <br />
           <ul>
-            <li>If the prisoner is called into the room and the chalice is upside down, do nothing.</li>
-            <li>If the prisoner is called into the room and the chalice is right-side up AND the prisoner has never flipped the chalice before, flip it.</li>
-            <li>If the prisoner is called into the room and the chalice is right-side up AND the prisoner has already flipped the chalice, do nothing.</li>
+            <li>If the chalice is upside down, do nothing.</li>
+            <li>If the chalice is right-side up:</li>
+            <ul>
+              <li>If the prisoner has never flipped the chalice before, flip it.</li>
+              <li>If the prisoner has already flipped the chalice before, do nothing.</li>
+            </ul>
           </ul>
           Why does this work? The general idea is that each prisoner somehow needs to send a signal to prisoner 1 that he's been called into the room.
           By flipping the chalice upside down, each prisoner is sending this message, since only prisoner 1 will flip the chalice back right-side up.
@@ -76,10 +82,9 @@ const KingsChalicePage = () => {
           and it's likely that another prisoner will have already flipped it), but, eventually, every prisoner will get a chance to send a signal.
           <br />
           <br />
-          This solution relies on randomness to work. Because the king uses a RNG to call the prisoners in order, prisoner 1 will eventually
+          This solution relies on randomness to work. Because the king uses an RNG to call the prisoners in order, prisoner 1 will eventually
           see 99 signals from the other prisoners and be able to announce, with certainty, that they have all been called into the room.
-          The prisoners will likely not be released at the first moment that they have all been seen because this strategy relies on the RNG to eventually
-          have each prisoner send the signal to prisoner 1. This will eventually happen (because it's an RNG), but it may take a while.
+          The prisoners will likely not be released at the first moment that they have all been seen; it may take a while.
         </TextSection>
       )}
       <br />

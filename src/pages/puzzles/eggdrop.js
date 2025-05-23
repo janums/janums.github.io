@@ -25,14 +25,14 @@ const EggDropPage = () => {
       </TextButton>
       {showHint1 && (
         <TextSection>
-          The naive approach is to drop the ball from every floor, starting at 1, until it breaks. This takes 100 drops in the worst case.
+          The naive approach is to drop the ball from every floor, starting at 1, until it breaks. This takes <i>k</i> = 100 drops in the worst case.
           <br />
           <br />
-          We can do better by doing a coarse-grain search follow by a fine-grain search. First, we drop the ball from floor 10, then 20, then 30, etc.
-          Once the first ball breaks, we can do a fine-grain search by dropping the second ball from the floors between our last drop and the current floor.
+          We can do better by doing a coarse-grained search follow by a fine-grained search. First, we drop the ball from floor 10, then 20, then 30, etc.
+          Once the first ball breaks, we can do a fine-grained search by dropping the second ball from the floors between our last drop and the current floor.
           <br />
           <br />
-          In the worst case, we drop the first ball at floor 10, 20, ... 100, and then from 91 to 99. This takes 19 drops in the worst case.
+          In the worst case, we drop the first ball at floor 10, 20, ... 100, and then from 91 to 99. This takes <i>k</i> = 19 drops.
           <br />
           <br />
           19 drops in the worst case is pretty good, but we can do <i>even</i> better.
@@ -48,13 +48,13 @@ const EggDropPage = () => {
           <br />
           <br />
           Here's the key insight to doing better than 19 drops: we want to "sacrifice" the performance of the better scenarios
-          (i.e. the first ball breaks at floor 10 or 20) in order to improve the worst-case scenario. How can we do this?
+          (i.e. the first ball breaks at a low floor) in order to improve the worst-case scenario. How can we do this?
           <br />
           <br />
-          Let's build some intuition. We somewhat arbitrarily decided to do the coarse-grain search every 10 floors. We can play with different values here, but we have to realize that
-          the hop size in our coarse-grain search has to be <i>dynamic</i>. That is, we might jump 20 floors the first time, but then jump 19, 18, etc.
+          Let's build some intuition. We somewhat arbitrarily decided to do the coarse-grained search every 10 floors. We can play with different values here, but we have to realize that
+          the hop size in our coarse-grained search has to be <i>dynamic</i>. That is, we might jump 20 floors the first time, but then jump 19, 18, etc.
           In the case that the first ball breaks early, we will have a longer search with the second ball, which is alright, since if it breaks later,
-          we'll have a shorter search at the higher floors.
+          we'll have a shorter fine-grained search at the higher floors.
           <br />
           <br />
           Putting this more formally: for the first trial, we drop from the <i>k</i><sup>th</sup> floor. If it breaks, we use the second ball on floors 1 through <i>k-1</i>.
@@ -71,7 +71,7 @@ const EggDropPage = () => {
           <br />
           In simpler terms, for the first trial, we drop from the 14th floor. If it breaks, we use the second ball on floors 1 through 13, for a maximum of 1+13=14 drops.
           If it doesn't break, we then "jump" 13 (not 14) floors, to floor 27. Again, if it breaks, we use the second ball on floors 15 through 27, for a maximum of 2+12=14 drops.
-          You continue proceeding this way, decrementing the jump size by 1 each time in the coarse-grain search.
+          You continue proceeding this way, decrementing the jump size by 1 each time in the coarse-grained search.
           <br />
           <br />
           If you're mathematically inclined, you may have noticed that you can shorten the series summation: <i>k</i> + <i>k-1</i> + <i>k-2</i> + ... + 1 = <i>k(k+1)/2</i>.

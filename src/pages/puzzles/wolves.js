@@ -15,17 +15,17 @@ const WolvesSheepPage = () => {
       <h1>One Sheep on an Island of Wolves</h1>
       <p>
         There is a pack of exactly 99 wolves on an island living alongside exactly 1 sheep.
-        Usually, the island herder protects the sheep, but he's leaving for a few days.
+        Usually, the island herder protects the sheep from the wolves, but he's leaving for a few days.
         Before he leaves, he casts the following spell on all the wolves, in an effort to protect the sheep:
         <br />
         <br />
-        <i>If any wolf kills and eats the sheep, it will turn into a sheep.</i>
+        <i>If any wolf kills and eats the sheep, that wolf itself will turn into a sheep.</i>
         <br />
         <br />
-        Each wolf has a few different options: it can either continue eating the grass on the island, or it can eat the sheep (only one wolf can eat the sheep).
-        Assume each wolf is perfectly rational. That is, all of them definitely don't want to turn into a sheep and then get eaten by another wolf,
-        but each one would prefer to eat the sheep over the grass on the island, if it knew somehow that it wouldn't get eaten once it turned into a sheep
-        - it could live forever as a sheep on the island.
+        Each wolf can eat the grass on the island, but they much prefer the sheep to the grass.
+        Assume each wolf is perfectly rational. That is, they definitely don't want to turn into a sheep and then get eaten by another wolf,
+        but they would prefer to eat the sheep (and live forever as a sheep if it knew somehow that it wouldn't get eaten) to eating the grass.
+        Only one wolf can eat one sheep.
         <br />
         <br />
         The herder leaves the island and expects all 99 wolves and 1 sheep to be remaining when he's back. Has he made a mistake? Does the sheep get eaten?
@@ -36,7 +36,7 @@ const WolvesSheepPage = () => {
       </TextButton>
       {showHint1 && (
         <TextSection>
-          The herder made a dire mistake - the sheep will get eaten! Why?
+          The herder made a mistake - the sheep will get eaten! Why?
         </TextSection>
       )}
       <br />
@@ -59,8 +59,8 @@ const WolvesSheepPage = () => {
           <br />
           <br />
           So what happens when there are 2 wolves and 1 sheep? Recall that the wolves are perfectly rational, so they know what happens in the 1 wolf case.
-          They know that, if either of them is the first to eat the sheep, they will subsequently get eaten by the other wolf.
-          They have reached a stalemate (technically a Nash equilibrium), and both choose to live forever without eating the sheep.
+          That is, they know that if either of them is the first to eat the sheep, they will subsequently get eaten by the other wolf.
+          They have reached a Nash equilibrium, and both choose to live forever without eating the sheep.
           <br />
           <br />
           When there are 3 wolves and 1 sheep, the wolves will rush to be the first to eat the sheep, since they know that the other two wolves will reach
