@@ -13,10 +13,13 @@ const TwoCoinsPage = () => {
     <Layout>
       <h1>Two Prisoners, Two Coins</h1>
       <p>
-        Two prisoners (let's call them <i>A</i> and <i>B</i>) are imprisoned in separate cells, each with a fair coin. They are given the following challenge:
+        A prison guard gives two prisoners a chance at freedom. He gives them the choice to play in the following game:
         <br />
         <br />
-        In each round, a guard will come to each prisoner's cell.
+        The two prisoners (let's call them <i>A</i> and <i>B</i>) will be imprisoned in separate cells, each with a fair coin.
+        <br />
+        <br />
+        In each round of the game, a guard will come to each prisoner's cell.
         The guard will have the prisoner flip his coin, tell him the result, and then ask him what the other prisoner flipped.
         <br />
         <br />
@@ -25,7 +28,7 @@ const TwoCoinsPage = () => {
             If they both guess correctly, they will be instantly released.
           </li>
           <li>
-            If neither of them guess correctly, they will both be executed immediately.
+            If neither of them guesses correctly, they will both be executed immediately.
           </li>
           <li>
             If one of the two prisoners correctly guesses what the other flipped, they have passed that round.
@@ -35,9 +38,9 @@ const TwoCoinsPage = () => {
           </li>
         </ul>
         <br />
-        They are given a brief moment to come up with a strategy together.
-        They are tired of living in prison, but they most definitely do not want to be executed.
-        What can they do? Can they maximize their chances of survival and try to be released?
+        If they choose to play, they will be given a brief moment to come up with a strategy together.
+        They are tired of living in prison, but they definitely don't want to be executed.
+        Should they choose to play?
       </p>
       <p>Source: unknown</p>
       <TextButton onClick={() => setShowHint1((prev) => !prev)}>

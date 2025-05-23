@@ -50,9 +50,9 @@ const WhatMakesAPuzzlePage = () => (
           I also don't know if these criteria are the best way to judge a puzzle.
         </li>
         <li>
-          I've included some hints for all the puzzles. Sometimes the hints are small, and sometimes they're very revealing. In general, when there are
-          multiple hints, the first ones are more subtle and the later ones are more revealing. If there is only one hint, it's probably quite telling,
-          so make sure you definitely need it before looking at it.
+          I've included some hints for all the puzzles. Sometimes the hints are gentle nudges, and sometimes they're very revealing. In general, when there are
+          multiple hints, the first one is subtle and following ones are more revealing. If there is only one hint, it's probably quite telling,
+          so make sure you definitely want it before looking at it.
         </li>
         <li>
           I mentioned in my first criterion that a good puzzle doesn't require background knowledge or technical skill to understand. I also
