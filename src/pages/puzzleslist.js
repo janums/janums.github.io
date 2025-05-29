@@ -49,52 +49,52 @@ const PuzzlesPage = () => {
         <div style={rowStyle}>
           <Link to="/puzzles/antsboard/">Ants on a Board</Link>
           <HardLabel />
-          <span>May 28, 2025</span>
+          <span>05-28-25</span>
         </div>
         <div style={rowStyle}>
           <Link to="/puzzles/antslog/">Ants on a Log</Link>
           <EasyLabel />
-          <span>May 27, 2025</span>
+          <span>05-27-25</span>
         </div>
         <div style={rowStyle}>
           <Link to="/puzzles/couples/">Couples Party</Link>
           <ModerateLabel />
-          <span>May 22, 2025</span>
+          <span>05-22-25</span>
         </div>
         <div style={rowStyle}>
           <Link to="/puzzles/twocoins/">Two Prisoners, Two Coins</Link>
           <ModerateLabel />
-          <span>May 21, 2025</span>
+          <span>05-21-25</span>
         </div>
         <div style={rowStyle}>
           <Link to="/puzzles/chalice/">The King's Chalice</Link>
           <HardLabel />
-          <span>May 20, 2025</span>
+          <span>05-20-25</span>
         </div>
         <div style={rowStyle}>
           <Link to="/puzzles/wolves/">One Sheep on an Island of Wolves</Link>
           <ModerateLabel />
-          <span>May 18, 2025</span>
+          <span>05-18-25</span>
         </div>
         <div style={rowStyle}>
           <Link to="/puzzles/thousandcoins/">A Thousand Coins</Link>
           <ModerateLabel />
-          <span>May 13, 2025</span>
+          <span>05-13-25</span>
         </div>
         <div style={rowStyle}>
           <Link to="/puzzles/rectangle/">Birthday Cake</Link>
           <ModerateLabel />
-          <span>May 12, 2025</span>
+          <span>05-12-25</span>
         </div>
         <div style={rowStyle}>
           <Link to="/puzzles/eggdrop/">2 glass balls, 100-story building</Link>
           <ModerateLabel />
-          <span>May 11, 2025</span>
+          <span>05-11-25</span>
         </div>
         <div style={rowStyle}>
           <Link to="/puzzles/threehats/">3 People, 5 Hats</Link>
           <EasyLabel />
-          <span>May 10, 2025</span>
+          <span>05-10-25</span>
         </div>
       </div>
     </Layout>
