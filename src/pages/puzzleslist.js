@@ -72,7 +72,7 @@ const PuzzlesPage = () => {
           <span>05-20-25</span>
         </div>
         <div style={rowStyle}>
-          <Link to="/puzzles/wolves/">One Sheep on an Island of Wolves</Link>
+          <Link to="/puzzles/wolves/">An Island of Wolves</Link>
           <ModerateLabel />
           <span>05-18-25</span>
         </div>
@@ -87,7 +87,7 @@ const PuzzlesPage = () => {
           <span>05-12-25</span>
         </div>
         <div style={rowStyle}>
-          <Link to="/puzzles/eggdrop/">2 glass balls, 100-story building</Link>
+          <Link to="/puzzles/eggdrop/">Egg Drop</Link>
           <ModerateLabel />
           <span>05-11-25</span>
         </div>
