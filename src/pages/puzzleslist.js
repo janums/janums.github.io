@@ -22,7 +22,7 @@ function useResponsiveRowStyle() {
   }, []);
 
   let gap = '0.5rem';
-  let gridTemplateColumns = '12fr 1fr 5fr';
+  let gridTemplateColumns = '12fr 1.5fr 5fr';
 
   return {
     display: 'grid',
