@@ -20,9 +20,8 @@ const AntsPage = () => {
         If two ants collide, they will both turn around and walk in the opposite direction.
         <br />
         <br />
-        You want to <i>maximize</i> the amount of time that any ant is on the log.
-        That is, you start a timer when the ants start walking, and you stop the timer when the last ant falls off the log.
-        How should you place the ants on the log to do this?
+        You start a timer when the ants start walking, and you stop the timer when the last ant falls off the log.
+        You want to <i>maximize</i> this amount of time. How should you place the ants on the log to do this?
       </p>
       <p>Source: unknown</p>
       <TextButton onClick={() => setShowHint1((prev) => !prev)}>
@@ -39,14 +38,14 @@ const AntsPage = () => {
       </TextButton>
       {showSection && (
         <TextSection>
-          The specific number of ants (4) is somewhat of a red herring. It doesn't matter how many ants you have -
-          for any number of ants &ge; 1, they can only be on the log for at most 100 seconds,
+          The specific number of ants (4) is somewhat of a red herring.
+          For any number of ants &ge; 1, they can only be on the log for at most 100 seconds,
           which is the time is takes for a single ant to walk the length of the log.
           <br />
           <br />
-          Why is that the case? Here's the key insight: two ants colliding with each other is equivalent to them just walking past each other.
+          Why is that? Here's the key insight: two ants colliding with each other is equivalent to them just walking past each other.
           You may now be able to visualize this a bit better: a single ant, no matter what it runs into, will just continue to walk by it, meaning that
-          it can only take 100 seconds at most to walk the length of the log.
+          any ant can only stay on the log for <i>at most</i> 100 seconds (the time it takes to walk the length of the log).
           <br />
           <br />
           So, the best strategy is to just place any one ant at an end of the log facing inwards.

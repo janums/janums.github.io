@@ -75,9 +75,9 @@ const TwoCoinsPage = () => {
           differently, <i>B</i> will guess <i>A</i>'s coin correctly.
           <br />
           <br />
-          There's no way for them to be released before the 1000th round. This strategy guarantees that <i>exactly</i> one of the two prisoners
-          will guess correctly, meaning there's no chance of them being released because they were both correct.
-          If they wanted to take a chance at being released earlier, they would take on an equal risk of being executed.
+          Following this strategy, there's no way for them to be released before the 1000th round
+          because it guarantees that <i>exactly</i> one of the two prisoners will guess correctly - they can't ever both be correct.
+          If they wanted to take a chance at being released earlier, they would have to take on an equal risk of being executed.
         </TextSection >
       )}
       <br />

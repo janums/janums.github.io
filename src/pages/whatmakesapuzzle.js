@@ -3,6 +3,7 @@ import { Link } from "gatsby";
 
 import Layout from "../components/layout";
 import Seo from "../components/seo";
+import ExternalLink from "../components/ExternalLink";
 
 const WhatMakesAPuzzlePage = () => (
   <Layout>
@@ -65,32 +66,19 @@ const WhatMakesAPuzzlePage = () => (
     <p>
       <ul>
         <li>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://en.wikipedia.org/wiki/Mathematical_induction"
-          >Induction</a>
+          <ExternalLink href="https://en.wikipedia.org/wiki/Mathematical_induction">Induction</ExternalLink>
         </li>
         <li>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://en.wikipedia.org/wiki/Pigeonhole_principle"
-          >Pigeonhole principle</a>
+          <ExternalLink href="https://en.wikipedia.org/wiki/Nash_equilibrium">Nash equilibrium</ExternalLink>
         </li>
         <li>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://en.wikipedia.org/wiki/Proof_by_exhaustion"
-          >Case analysis</a>
+          <ExternalLink href="https://en.wikipedia.org/wiki/Proof_by_exhaustion">Case analysis</ExternalLink>
         </li>
         <li>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://en.wikipedia.org/wiki/Nash_equilibrium"
-          >Nash equilibrium</a>
+          <ExternalLink href="https://en.wikipedia.org/wiki/Pigeonhole_principle">Pigeonhole principle</ExternalLink>
+        </li>
+        <li>
+          <ExternalLink href="https://simple.wikipedia.org/wiki/Binary_search">Binary search</ExternalLink>
         </li>
       </ul>
     </p>
