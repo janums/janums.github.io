@@ -15,7 +15,7 @@ const IndexPage = () => (
         <b>I'm jps.</b>
       </h1>
       <p className={styles.intro}>
-        I graduated from Princeton  in May 2023 and am a software engineer at{" "}
+        I graduated from Princeton in 2023 and am a software engineer at{" "}
         <ExternalLink href="https://ramp.com/">
           Ramp
         </ExternalLink>

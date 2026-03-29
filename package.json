@@ -23,6 +23,9 @@
     "gatsby"
   ],
   "license": "0BSD",
+  "engines": {
+    "node": "24.x"
+  },
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
