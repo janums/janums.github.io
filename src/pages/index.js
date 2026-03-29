@@ -16,8 +16,8 @@ const IndexPage = () => (
       </h1>
       <p className={styles.intro}>
         I graduated from Princeton  in May 2023 and am a software engineer at{" "}
-        <ExternalLink href="https://www.pinecone.io/">
-          Pinecone.io
+        <ExternalLink href="https://ramp.com/">
+          Ramp
         </ExternalLink>
         . <br /> Check out my favorite{" "}
         <ExternalLink href="https://letterboxd.com/js101/films/by/entry-rating/">
