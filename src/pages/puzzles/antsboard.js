@@ -19,7 +19,7 @@ const AntsPage = () => {
         Your friend challenges you to a game with a square board, a round glass, and 51 ants.
         <br />
         <br />
-        This the how the game works: your opponent will first get to place the 51 ants anywhere on the square (which has side length 1),
+        This is how the game works: your opponent will first get to place the 51 ants anywhere on the square (which has side length 1),
         and they will stay perfectly still.
         Then, you will get to place the round glass (which has radius 1/7) anywhere on the square. If you can capture <i>at least</i> 3 ants under
         your glass, you win. If not, your friend wins.
@@ -46,10 +46,7 @@ const AntsPage = () => {
           <br />
           <br />
           So, a circle with radius <i>r</i> and diameter 2<i>r</i> can fully cover a square with up to diagonal length 2<i>r</i>, which would
-          have side length &radic;2&sdot;<i>r</i>.
-          <br />
-          <br />
-          &radic;2&sdot;1/7 ≈ 0.202, so a circle with radius 1/7 can fully cover a square with side length up to 0.202.
+          have side length <i>r</i>&sdot;&radic;2.
         </TextSection>
       )}
       <br />
@@ -58,7 +55,15 @@ const AntsPage = () => {
       </TextButton>
       {showHint3 && (
         <TextSection>
-          A circle with radius 1/7 can fully cover a square with side length 1/5.
+          A circle with radius 1/7 can <i>fully</i> cover a square with side length 1/5.
+          
+          <br />
+          <br />
+          Why? With side length 1/5, the diagonal 
+          is &radic;2/5. Our circle's diameter is 2/7. Is 2/7 &ge; &radic;2/5? Square both sides and this becomes much easier:
+          2/7 &rarr; 4/49. &radic;2/5 &rarr; 2/25 = 4/50. And we know 4/49 &ge; 4/50!
+          <br />
+          <br />
           Can you prove you can always win the game if you had a square glass with side length 1/5 instead?
         </TextSection>
       )}
