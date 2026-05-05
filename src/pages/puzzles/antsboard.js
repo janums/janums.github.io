@@ -6,6 +6,7 @@ import Seo from "../../components/seo";
 import TextButton from "../../components/TextButton";
 import TextSection from "../../components/TextSection";
 import ExternalLink from "../../components/ExternalLink";
+import Katex from "../../components/Katex";
 
 const AntsPage = () => {
   const [showHint1, setShowHint1] = React.useState(false);
@@ -21,7 +22,9 @@ const AntsPage = () => {
         <br />
         This is how the game works: your opponent will first get to place the 51 ants anywhere on the square (which has side length 1),
         and they will stay perfectly still.
-        Then, you will get to place the round glass (which has radius 1/7) anywhere on the square. If you can capture <i>at least</i> 3 ants under
+        Then, you will get to place the round glass (which has radius{" "}
+        <Katex math={String.raw`\tfrac17`} />
+        ) anywhere on the square. If you can capture <i>at least</i> 3 ants under
         your glass, you win. If not, your friend wins.
         <br />
         <br />
@@ -42,11 +45,13 @@ const AntsPage = () => {
       </TextButton>
       {showHint2 && (
         <TextSection>
-          What's the largest square that can fit entirely inside a circle? A square whose diagonal is the same as the diameter of the circle.
+          What&apos;s the largest square that can fit entirely inside a circle? A square whose diagonal is the same as the diameter of the circle.
           <br />
           <br />
-          So, a circle with radius <i>r</i> and diameter 2<i>r</i> can fully cover a square with up to diagonal length 2<i>r</i>, which would
-          have side length <i>r</i>&sdot;&radic;2.
+          So, a circle with radius <Katex math={String.raw`r`} /> and diameter{" "}
+          <Katex math={String.raw`2r`} /> can fully cover a square with diagonal length at most{" "}
+          <Katex math={String.raw`2r`} />, which means side length at most{" "}
+          <Katex math={String.raw`r\sqrt{2}`} />.
         </TextSection>
       )}
       <br />
@@ -55,16 +60,19 @@ const AntsPage = () => {
       </TextButton>
       {showHint3 && (
         <TextSection>
-          A circle with radius 1/7 can <i>fully</i> cover a square with side length 1/5.
-          
+          A circle with radius <Katex math={String.raw`\tfrac17`} /> can <i>fully</i> cover a square with side length{" "}
+          <Katex math={String.raw`\tfrac15`} />.
           <br />
           <br />
-          Why? With side length 1/5, the diagonal 
-          is &radic;2/5. Our circle's diameter is 2/7. Is 2/7 &ge; &radic;2/5? Square both sides and this becomes much easier:
-          2/7 &rarr; 4/49. &radic;2/5 &rarr; 2/25 = 4/50. And we know 4/49 &ge; 4/50!
+          Why? With side length <Katex math={String.raw`\tfrac15`} />, the diagonal is{" "}
+          <Katex math={String.raw`\tfrac{\sqrt{2}}{5}`} />
+          . Our circle&apos;s diameter is <Katex math={String.raw`\tfrac27`} />. Is{" "}
+          <Katex math={String.raw`\tfrac27 \geq \tfrac{\sqrt{2}}{5}`} />? Squaring both sides yields{" "}
+          <Katex math={String.raw`\tfrac{4}{49} \geq \tfrac{2}{25} = \tfrac{4}{50}`} />.
           <br />
           <br />
-          Can you prove you can always win the game if you had a square glass with side length 1/5 instead?
+          Can you prove you can always win the game if you had a square glass with side length{" "}
+          <Katex math={String.raw`\tfrac15`} />?
         </TextSection>
       )}
       <br />
@@ -82,13 +90,17 @@ const AntsPage = () => {
           So why can you always win? You can prove that it's <i>impossible</i> to place the ants in such a way that no 3 of them can be captured by your glass.
           <br />
           <br />
-          Assume for a moment that your glass is a square with side length 1/5.
-          Then, divide the square board into 25 smaller squares, each with side length 1/5 to match your glass. By the Pigeonhole principle,
+          Assume for a moment that your glass is a square with side length{" "}
+          <Katex math={String.raw`\tfrac15`} />.
+          Then, divide the square board into 25 smaller squares, each with side length{" "}
+          <Katex math={String.raw`\tfrac15`} /> to match your glass. By the pigeonhole principle,
           at least one of these smaller squares will contain at least 3 ants, even if your opponent placed them optimally. This means that
           your glass will always be able to capture at least 3 ants.
           <br />
           <br />
-          We already proved in the hints above that your glass with radius 1/7 can fully cover a square with side length 1/5, meaning
+          We already proved in the hints above that your glass with radius{" "}
+          <Katex math={String.raw`\tfrac17`} /> can fully cover a square with side length{" "}
+          <Katex math={String.raw`\tfrac15`} />, meaning
           any of these 25 smaller squares can be fully covered by your glass.
           <br />
           <br />
