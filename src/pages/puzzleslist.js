@@ -47,6 +47,11 @@ const PuzzlesPage = () => {
       <br />
       <div>
         <div style={rowStyle}>
+          <Link to="/puzzles/bentcoin/">One Bent Coin</Link>
+          <EasyLabel />
+          <span>05-05-26</span>
+        </div>
+        <div style={rowStyle}>
           <Link to="/puzzles/threecoins/">Three Coins</Link>
           <EasyLabel />
           <span>05-04-26</span>
